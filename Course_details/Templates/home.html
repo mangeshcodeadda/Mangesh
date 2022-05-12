@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <title>BEST LEARNING PLATFORM</title>
+    </head>
+    <body>
+        <h5>Hi dear{{display_name}} this is display page</h5>
+        
+
+
+
+<h2>JCOET Learning Center</h2>
+
+<p>Learning Center Course Details form </p>
+
+<form method="post">{% csrf_token %}
+  <fieldset>
+    <legend>Cource Details:</legend>
+    <label for="Cname">Course name:</label><br>
+    <input type="text" id="Cname" name="Cname" value=""><br>
+    <label for="Cfees">fees:</label><br>
+    <input type="text" id="Cfees" name="Cfees" value=""><br><br>
+    <label for="Cduration">Duration:</label><br>
+    <input type="text" id="Cduration" name="Cduration" value=""><br><br>
+    <label for="Branch">Branch:</label><br>
+    <input type="text" id="Branch" name="Branch" value=""><br><br>
+    <label for="Faculty Name">Faculty Name:</label><br>
+    <input type="text" id="Faculty Name" name="Faculty Name" value=""><br><br>
+    <label for="Batch Timing">Batch Timing:</label><br>
+    <input type="text" id="Batch Timing" name="Batch Timing" value=""><br><br>
+    <label for="Batch starts from">Batch starts from:</label><br>
+    <input type="text" id="Batch starts from" name="Batch starts from" value=""><br><br>        
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+
+
+
+
+    </body>
+</html
