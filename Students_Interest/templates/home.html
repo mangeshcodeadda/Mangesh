@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<style>
+.scroll-left {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: yellow;
+ color: red;
+ border: 1px solid red;
+}
+.scroll-left p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ transform:translateX(100%);
+ /* Apply animation to this element */
+ animation: scroll-left 15s linear infinite;
+}
+/* Move it (define the animation) */
+@keyframes scroll-left {
+ 0%   {
+ transform: translateX(100%); 		
+ }
+ 100% {
+ transform: translateX(-100%); 
+ }
+}
+</style>
+
+<div class="scroll-left">
+<p>Jagadambha College Of Engineering & Technology, Yavatmal</p>
+</div>
+
+<html>
+<head>
+
+</head>
+<body style="background-color:powderblue;">>
+
+<h1>Welcome To Learning Center</h1>
+
+</body>
+<form>
+    <b><label for="fname">First Name:&nbsp &nbsp &nbsp &nbsp</label><b> 
+    <input type="text" value=" " id="fname" ><br><br>
+
+    <b><label for="lname">Last Name:&nbsp &nbsp &nbsp &nbsp</label><b>
+    <input type="text" value=" " id="lname" ><br><br>
+    
+    <b><label for="lname">Branch:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label><b>
+    <input type="text" value=" " id="lname" ><br><br>
+    
+    <b><label for="lname">Cource Interest: </label><b><br><br>
+    
+   <select>
+        <option selected disabled> 1st Preference</option>
+        <option>Python</option>
+        <option>JAVA</option>
+        <option>Ruby</option>
+        <option>C++</option>
+    </select> 
+    <select>
+        <option selected disabled> 2nd Preference</option>
+        <option>Python</option>
+        <option>JAVA</option>
+        <option>Ruby</option>
+        <option>C++</option>
+    </select>
+    <select>
+        <option selected disabled> 3rd Preference</option>
+        <option>Python</option>
+        <option>JAVA</option>
+        <option>Ruby</option>
+        <option>C++</option>
+    </select>
+</select><br><br>
+   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="reset">  &nbsp<input type="submit">
+</form>
+
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2> Students Details </h2>
+
+<table style="width:100%">
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Branch</th>
+    <th>Cource Interest</th>
+  </tr>
+  <tr>
+    <td> &nbsp </td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    
+  </tr>
+  <tr>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+  </tr>
+</table>
+
+</body>
+</html>
+<br>
+<br>
+<br>
+
+<marquee behavior="scroll" direction="up"><p style="text-align:center; color:red"><b> Developed by:- Altaf Khan </b></p></marquee>
+
+</html>
