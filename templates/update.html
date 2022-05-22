@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<title>MentorDetails</title>
+</head>
+<body style="background-color: #e3f2fd7b;">
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="http://127.0.0.1:8000/">Ishanya Project</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="http://127.0.0.1:8000/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="http://127.0.0.1:8000/update/">Update Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/delete/">Delete Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:8000/detailsall/">All Details</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav><br>
+<h3><center><u>UPDATE DETAILS</u></center></h3>
+<h4>Enter Values Here:</h4>
+<form action=" " method="post">
+    {% csrf_token %} 
+    <center>Enter The ID Of Mentor Whose Data Want To Upgrade : <input type="text" placeholder="Enter The ID" name="UID"> </center>
+    Enter Fullname : <input type="text" placeholder="Enter Fullname" name="name"><br><br>
+    Enter Subject : <input type="text" placeholder="Enter Subject" name="subject"><br><br>
+    Enter Experiance : <input type="text" placeholder="Enter Experiance" name="experiance"><br><br>
+    Enter Contact Number : <input type="text" placeholder="Enter Contact" name="contact"><br><br>
+    Enter Email Id : <input type="text" placeholder="Enter Email" name="email"><br><br>
+    <center><input type="submit" value="Submit"></center>
+</form>`
+</html>
